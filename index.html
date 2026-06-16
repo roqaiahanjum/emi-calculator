@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate your monthly home or car loan EMIs with our premium, easy-to-use EMI Calculator.">
+    <title>EMI Calculator | Smart Financial Planning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <main class="container">
+        <section class="calculator-card" id="emi-calc">
+            <h1>EMI Calculator</h1>
+            
+            <div class="inputs-container">
+                <div class="input-group">
+                    <label for="loanAmount">Loan Amount (₹)</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="loanAmount" placeholder="e.g. 500000" min="0">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="interestRate">Interest Rate (%)</label>
+                    <div class="input-wrapper">
+                        <input type="number" id="interestRate" step="0.1" placeholder="e.g. 8.5" min="0">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="loanTenure">Loan Tenure</label>
+                    <div class="tenure-controls">
+                        <input type="number" id="loanTenure" placeholder="e.g. 5" min="0">
+                        <div class="toggle-container">
+                            <button type="button" class="toggle-btn active" id="btnYears">Years</button>
+                            <button type="button" class="toggle-btn" id="btnMonths">Months</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="emiChart"></canvas>
+            </div>
+
+            <div class="results-section">
+                <div class="result-item main">
+                    <span class="result-label">Monthly EMI</span>
+                    <span class="result-value emi-value" id="monthlyEMI">₹ 0</span>
+                </div>
+                
+                <div class="result-item">
+                    <span class="result-label">Total Interest</span>
+                    <span class="result-value" id="totalInterest">₹ 0</span>
+                </div>
+                
+                <div class="result-item">
+                    <span class="result-label">Total Payment</span>
+                    <span class="result-value total-value" id="totalPayment">₹ 0</span>
+                </div>
+            </div>
+
+            <details class="amortization-container">
+                <summary>Amortization Schedule</summary>
+                <div class="table-scroll">
+                    <table id="amortizationTable">
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Principal Paid</th>
+                                <th>Interest Paid</th>
+                                <th>Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="amortizationBody">
+                            <!-- Injected via JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
