@@ -74,7 +74,6 @@ This project is entirely self-contained and requires **no build step**.
 
 - **Live Demo**: [https://roqaiahanjum.github.io/emi-calculator/](https://roqaiahanjum.github.io/emi-calculator/)
 - **GitHub Repo**: [https://github.com/roqaiahanjum/emi-calculator](https://github.com/roqaiahanjum/emi-calculator)
-- **CodePen**: [Insert link here]
 
 ---
 *Created with ❤️ for smart financial planning.*
