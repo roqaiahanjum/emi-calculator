@@ -25,7 +25,7 @@ A premium, high-performance EMI Calculator built with a modern **Dark Glassmorph
 ### The EMI Formula
 The calculator uses the standard Equated Monthly Installment formula:
 
-$$EMI = \frac{P \times R \times (1+R)^N}{(1+R)^N - 1}$$
+EMI = [P × R × (1+R)^N] / [(1+R)^N - 1]
 
 Where:
 - **P**: Principal Loan Amount
@@ -72,7 +72,8 @@ This project is entirely self-contained and requires **no build step**.
 
 ## 🔗 Links
 
-- **Live Demo**: [Insert Link Here]
+- **Live Demo**: [https://roqaiahanjum.github.io/emi-calculator/](https://roqaiahanjum.github.io/emi-calculator/)
+- **GitHub Repo**: [https://github.com/roqaiahanjum/emi-calculator](https://github.com/roqaiahanjum/emi-calculator)
 - **CodePen**: [Insert link here]
 
 ---
