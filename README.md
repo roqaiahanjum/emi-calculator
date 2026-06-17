@@ -1,4 +1,4 @@
-# 🧮 Smart EMI Calculator
+﻿# 🧮 Smart EMI Calculator
 
 A premium, high-performance EMI Calculator built with a modern **Dark Glassmorphism** aesthetic. This tool provides instant financial insights with real-time calculations, visual data representation, and a detailed monthly breakdown.
 
@@ -77,3 +77,4 @@ This project is entirely self-contained and requires **no build step**.
 
 ---
 *Created with ❤️ for smart financial planning.*
+
